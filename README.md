@@ -4,7 +4,7 @@
 <h6>这套界面大部分参考了微信官方的WeUI样式，界面主要以简洁实用为主，喜欢折腾的童鞋可以自己再深加工。这套界面纯属因为工作原因而制作，很多页面可能不那么尽如人意，不过对于前端偷懒，后端套数据还是可以的。</h6>
 <h6>本UI不定期更新，如果有bug欢迎大家指正，如果有新的需求也可以留言告诉我。</h6>
 <br />
-<table border="0" cellspacing="2" cellpadding="2">
+<table border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td><img class="aligncenter size-full wp-image-139" src="http://www.deajax.com/wp-content/uploads/2019/01/IMG_0577.png" alt="" width="200"/></td>
 <td><img class="aligncenter size-full wp-image-125" src="http://www.deajax.com/wp-content/uploads/2019/01/IMG_0597.png" alt="" width="200"/></td>
