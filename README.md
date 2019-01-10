@@ -44,4 +44,6 @@
 <p>Login 登录模块</p>
 <p>User Center 个人中心</p>
 
+<br /><br />
+<hr/>
 <h4>Desgin by <a href='http://www.deajax.com'>Deajax</a></h4>
