@@ -1,0 +1,93 @@
+/* pages/card/card.wxss */
+
+.block-title {
+  padding: 15rpx 40rpx;
+  font-size: 28rpx;
+  color: #909399;
+}
+
+.container .block-title {
+  padding-top: 0;
+}
+
+.card {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.card-header, .card-body, .card-footer {
+  padding: 18rpx 40rpx;
+}
+
+.card-header::after, .card-footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.card-header {
+  border-bottom: 1rpx solid #ebeef5;
+}
+
+.card-footer {
+  border-top: 1rpx solid #ebeef5;
+  font-size: 28rpx;
+}
+
+.card-before {
+  float: left;
+}
+
+.card-after {
+  float: right;
+}
+
+.card-title {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.card-media {
+  background-color: #303133;
+  height: 300rpx;
+}
+
+.card text {
+  display: block;
+  font-size: 28rpx;
+  color: #909399;
+}
+
+.card-route {
+  padding: 30rpx 40rpx;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.card-route-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-route-item text {
+  font-size: 24rpx;
+}
+
+.card-route-item label {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.card-route .route-icon {
+  width: 120rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  padding-top: 20rpx;
+  font-size: 28rpx;
+  color: #303133;
+}

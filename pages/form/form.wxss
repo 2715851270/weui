@@ -1,0 +1,239 @@
+
+.form-block {
+  display: block;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  padding-left: 20rpx;
+}
+
+.form-group::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 1rpx;
+  left: 40rpx;
+  height: 1rpx;
+  background-color: #ebeef5;
+}
+
+.form-group:last-child::after {
+  content: none;
+}
+
+.form-label {
+  display: block;
+  flex: 0 0 200rpx;
+  width: 200rpx;
+  padding: 20rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #606266;
+}
+
+.form-control {
+  display: block;
+  flex: 1;
+  width: 100%;
+  min-height: 90rpx;
+  padding: 20rpx;
+}
+
+.form-label ~ .form-control {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+picker.form-control {
+  white-space: normal !important;
+}
+
+.form-abstrac {
+  display: block;
+  font-size: 26rpx;
+  color: #909399;
+}
+
+.form-control switch {
+  float: right;
+  margin: -6rpx 0;
+}
+
+.form-control checkbox, .form-control radio {
+  position: relative;
+  top: -2rpx;
+}
+
+.form-control checkbox {
+  float: right;
+}
+
+.form-control checkbox .wx-checkbox-input {
+  border: none;
+}
+
+.form-control .checkbox, .form-control .radio {
+  display: block;
+}
+
+textarea.form-control {
+  padding: 20rpx;
+  line-height: 1.5;
+  height: 200rpx;
+}
+
+navigator.form-control {
+  color: #1a1a1a;
+}
+
+.form-control.navigator-right {
+  background-position: center right 20rpx;
+}
+
+.form-upload {
+  display: flex;
+  flex-flow: wrap;
+  flex: 1;
+  width: 100%;
+  padding: 6rpx 10rpx;
+}
+
+.upload-item {
+  flex: 0 0 152rpx;
+  width: 152rpx;
+  height: 152rpx;
+  margin: 10rpx;
+  border: 1rpx solid #dcdfe6;
+  overflow: hidden;
+}
+
+.upload-item.add {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='56px' height='56px'%3E%3Cpath fill-rule='evenodd' fill='rgb%28204, 204, 204%29' d='M54.000,30.000 L30.000,30.000 L30.000,54.000 C30.000,55.105 29.105,56.000 28.000,56.000 C26.896,56.000 26.000,55.105 26.000,54.000 L26.000,30.000 L2.000,30.000 C0.895,30.000 0.000,29.104 0.000,28.000 C0.000,26.895 0.895,26.000 2.000,26.000 L26.000,26.000 L26.000,2.000 C26.000,0.895 26.896,-0.000 28.000,-0.000 C29.105,-0.000 30.000,0.895 30.000,2.000 L30.000,26.000 L54.000,26.000 C55.104,26.000 56.000,26.895 56.000,28.000 C56.000,29.104 55.104,30.000 54.000,30.000 Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 46rpx;
+  border-style: dashed;
+}
+
+.form-action {
+  padding: 30rpx;
+  padding-top: 10rpx;
+}
+
+.form-before {
+  border-right: 1rpx solid #f4f4f6;
+  color: #1a1a1a;
+}
+
+.form-after {
+  margin-right: 20rpx;
+  flex: 0 0 82rpx;
+  height: 82rpx;
+  background-image: url("data:image/svg+xml,%3Csvg t='1545532350060' class='icon' style='' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='3274' xmlns:xlink='http://www.w3.org/1999/xlink' width='200' height='200'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C/style%3E%3C/defs%3E%3Cpath d='M580.517 637.771c0.727 5.107-0.732 21.877-2.922 25.519-34.996 43.749-87.49 71.453-116.656 71.453-25.519 0-26.249-32.077-19.686-67.076 8.75-48.854 24.061-113.745 33.538-161.866 1.461-5.833 0-11.663-4.375-11.663-6.561 0-18.228 5.83-34.265 16.765-0.731 0-2.918-0.723-2.918-2.186-0.731-5.833 1.457-19.687 4.375-22.603 41.558-38.641 94.055-66.346 118.116-66.346 16.037 0 16.037 33.54 10.209 61.244-10.936 53.224-31.354 139.264-33.543 166.236-0.727 10.209 1.463 14.585 6.564 14.585 8.75 0 23.334-10.209 38.641-25.52 0 0.001 2.922 0.001 2.922 1.458z m6.561-339.036c2.916 5.102 4.375 21.143 3.644 25.513-2.913 18.232-10.937 33.542-24.062 43.02-7.292 5.833-43.02 11.668-50.307 8.018-10.208-6.558-17.5-17.495-18.959-32.077-0.729-11.666 3.646-28.438 9.478-34.265 10.209-9.483 33.543-19.687 53.225-19.687 14.582 0 24.794 5.833 26.981 9.478z' p-id='3275' fill='%231890ff'%3E%3C/path%3E%3Cpath d='M512 907c-53.313 0-105.046-10.447-153.76-31.051-47.039-19.896-89.279-48.373-125.547-84.642-36.268-36.268-64.746-78.508-84.642-125.547C127.447 617.047 117 565.315 117 512.001c0-53.314 10.447-105.046 31.051-153.76 19.896-47.04 48.374-89.28 84.641-125.548 36.268-36.268 78.509-64.746 125.548-84.642C406.954 127.448 458.686 117 512 117s105.046 10.447 153.759 31.051c47.04 19.896 89.28 48.374 125.548 84.642 36.269 36.268 64.746 78.508 84.642 125.548C896.552 406.955 907 458.687 907 512.001c0 53.313-10.447 105.046-31.052 153.76-19.896 47.039-48.373 89.279-84.642 125.547-36.268 36.269-78.508 64.745-125.548 84.642C617.046 896.553 565.313 907 512 907z m0-740c-190.234 0-345 154.767-345 345.001C167 702.235 321.766 857 512 857c190.233 0 345-154.766 345-344.999C857 321.767 702.233 167 512 167z' p-id='3276' fill='%231890ff'%3E%3C/path%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 46rpx;
+}
+
+.form-messages {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  background-color: rgba(233, 79, 79, 0.85);
+  padding: 10rpx 40rpx;
+  font-size: 24rpx;
+  color: #fff;
+  z-index: 99;
+}
+
+.form-agreement {
+  font-size: 26rpx;
+  color: #909399;
+  padding: 0 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.form-agreement checkbox .wx-checkbox-input {
+  height: 26rpx;
+  width: 26rpx;
+  position: relative;
+  top: -2rpx;
+  margin-right: 0;
+}
+
+.form-agreement checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  font-size: 26rpx;
+}
+
+.form-agreement navigator {
+  display: inline-block;
+}
+
+.form-group.error .form-control {
+  color: #e64340
+}
+.form-group.error::after {
+  content: '';
+  position: absolute;
+  left: calc(100% - 60rpx);
+  top: 25rpx;
+  width: 40rpx;
+  height: 40rpx;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg t='1545792486198' class='icon' style='' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='2549' xmlns:xlink='http://www.w3.org/1999/xlink' width='200' height='200'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C/style%3E%3C/defs%3E%3Cpath d='M512 1024C229.227 1024 0 794.773 0 512S229.227 0 512 0s512 229.227 512 512-229.227 512-512 512z m0-372.373a69.813 69.813 0 1 0 0 139.648 69.813 69.813 0 0 0 0-139.638z m0-418.902a59.307 59.307 0 0 0-59.243 61.995l10.582 232.843a48.704 48.704 0 0 0 97.322 0l10.582-232.843A59.307 59.307 0 0 0 512 232.725z' p-id='2550' fill='%23e64340'%3E%3C/path%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32rpx;
+}
+
+.form-avatar {
+  float: right;
+  width: 140rpx;
+  height: 140rpx;
+  background-color: #f4f4f6;
+  background-image: url("data:image/svg+xml,%3Csvg t='1545804745392' class='icon' style='' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='5268' xmlns:xlink='http://www.w3.org/1999/xlink' width='200' height='200'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C/style%3E%3C/defs%3E%3Cpath d='M603.939 586.641c-1.309-0.43-2.832-1.189-4.57-2.273-1.74-1.086-3.918-3.15-6.533-6.199-2.617-3.047-4.57-6.74-5.863-11.08-1.295-4.342-1.838-10.316-1.629-17.929 0.207-7.61 1.836-15.979 4.885-25.107 21.746-22.608 39.68-50.437 53.803-83.481 14.123-33.047 21.191-66.307 21.205-99.783 0-51.313-14.672-91.204-44.018-119.672-29.344-28.467-65.756-42.707-109.237-42.721-43.48-0.015-79.894 14.226-109.238 42.721-29.344 28.495-44.016 68.386-44.016 119.672 0 33.923 7.068 67.406 21.204 100.451s32.071 60.871 53.804 83.482c3.479 11.311 5.217 20.551 5.217 27.715 0 7.166-1.955 13.365-5.864 18.596-3.909 5.232-7.388 8.926-10.435 11.082s-5.656 3.68-7.826 4.572c-31.308 11.311-60.442 24.141-87.407 38.486-26.964 14.344-50.332 31.082-70.104 50.213-19.773 19.131-29.664 37.609-29.679 55.434v20.871c0 18.268 8.153 33.811 24.461 46.625 16.308 12.816 38.806 22.492 67.495 29.031 28.689 6.537 58.584 11.213 89.682 14.023 31.098 2.813 65.557 4.225 103.374 4.236 189.143 0 283.715-31.305 283.715-93.918v-20.871c0-18.268-10.002-36.969-30.01-56.1s-43.926-35.869-71.754-50.213c-27.828-14.346-58.049-26.959-90.662-37.842v-0.021z' p-id='5269' data-spm-anchor-id='a313x.7781069.0.i9' class='selected' fill='%23dcdfe6'%3E%3C/path%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100rpx;
+  margin-right: 20rpx;
+  overflow: hidden;
+}
+
+.uploadcard {
+  display: flex;
+  padding: 20rpx 30rpx;
+}
+
+.upcard-item {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 0;
+  padding-bottom: 30%;
+  background-color: #f4f4f6;
+  background-image: url("data:image/svg+xml,%3Csvg t='1545805739922' class='icon' style='' viewBox='0 0 1024 1024' version='1.1' xmlns='http://www.w3.org/2000/svg' p-id='7373' xmlns:xlink='http://www.w3.org/1999/xlink' width='200' height='200'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C/style%3E%3C/defs%3E%3Cpath d='M749.6 306.1h210.7v53.7H749.6z' fill='%23dcdfe6' p-id='7374'%3E%3C/path%3E%3Cpath d='M828.1 227.6h53.7v210.7h-53.7z' fill='%23dcdfe6' p-id='7375'%3E%3C/path%3E%3Cpath d='M858.5 854.8H99.1c-19.8 0-35.8-16-35.8-35.8V301.9c0-19.8 16-35.8 35.8-35.8h200.3l38.5-64.1c10.2-21.4 31.6-35 55.5-35h170.8c23.9 0 45.3 13.6 55.5 35l38.5 64.1H689c19.8 0 35.8 16 35.8 35.8s-16 35.8-35.8 35.8h-51c-12.6 0-24.2-6.6-30.7-17.4l-49.1-81.7H399.5l-49.1 81.7c-6.5 10.8-18.1 17.4-30.7 17.4H135v445.5h687.8V510.9c0-19.8 16-35.8 35.8-35.8s35.8 16 35.8 35.8V819c-0.1 19.8-16.1 35.8-35.9 35.8z' fill='%23dcdfe6' p-id='7376'%3E%3C/path%3E%3Cpath d='M478.8 719.9c-94.6 0-171.5-76.9-171.5-171.5s76.9-171.5 171.5-171.5 171.5 76.9 171.5 171.5-76.9 171.5-171.5 171.5z m0-271.3c-55.1 0-99.9 44.8-99.9 99.9s44.8 99.9 99.9 99.9 99.9-44.8 99.9-99.9-44.8-99.9-99.9-99.9zM244.9 413.8h-59c-9.9 0-17.9-8-17.9-17.9 0-9.9 8-17.9 17.9-17.9h59c9.9 0 17.9 8 17.9 17.9 0 9.9-8 17.9-17.9 17.9z' fill='%23dcdfe6' p-id='7377'%3E%3C/path%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70rpx;
+  border: 1rpx dashed #dcdfe6;
+  border-radius: 8rpx;
+  margin: 10rpx;
+  overflow: hidden;  
+}
+
+.form-help-block {
+  padding: 20rpx 40rpx;
+  font-size: 26rpx;
+}
+
+.uploadcard ~ .form-help-block {
+  padding-top: 0;
+}

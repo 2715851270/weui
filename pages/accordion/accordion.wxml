@@ -1,0 +1,23 @@
+<!--pages/accordion/accordion.wxml-->
+
+<view class='container'>
+
+  <view class='panel'>
+    <view class='panel-header {{showIndex == 1 ? "up":""}}' data-index='1' catchtap='panel'>
+    accordion item
+    </view>
+    <view class='panel-body' wx:if="{{showIndex == 1}}">
+    content
+    </view>
+  </view>
+
+  <view class='panel'>
+    <view class='panel-header {{showIndex == 2 ? "up":""}}' data-index='2' catchtap='panel'>
+    accordion item
+    </view>
+    <view class='panel-body' wx:if="{{showIndex == 2}}">
+    content
+    </view>
+  </view>
+
+</view>

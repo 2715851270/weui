@@ -1,0 +1,86 @@
+<!--pages/card/card.wxml-->
+
+<view class='container'>
+
+  <view class='block-title'>卡片视图</view>
+  <view class='card'>
+    <view class='card-header'>
+      <view class='card-before'>
+        <label class='card-title'>Title</label>
+      </view>
+      <view class='card-after'>card-after</view>
+    </view>
+    <view class='card-body'>
+    card-body
+    </view>
+    <view class='card-footer'>
+      <view class='card-before'>card-before</view>
+      <view class='card-after'>card-after</view>
+    </view>
+  </view>
+
+  <view class='block-title'>媒体卡片</view>
+  <view class='card'>
+    <view class='card-media'>
+      <image mode='aspectFill' src='{{images}}'></image>
+    </view>
+    <view class='card-body'>
+      <text>Posted on January 18, 2016</text>
+      card-body
+    </view>
+    <view class='card-footer'>
+      <view class='card-before'>card-before</view>
+      <view class='card-after'>
+        <navigator url=''>readmore</navigator>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='block-title'>媒体卡片带头部</view>
+  <view class='card'>
+    <view class='card-header'>
+      <view class='card-before'>
+        <label class='card-title'>Title</label>
+      </view>
+      <view class='card-after'>card-after</view>
+    </view>
+    <view class='card-media'>
+      <image mode='aspectFill' src='{{images}}'></image>
+    </view>
+    <view class='card-body'>
+      <text>Posted on January 18, 2016</text>
+      card-body
+    </view>
+    <view class='card-footer'>
+      <view class='card-before'>card-before</view>
+      <view class='card-after'>
+        <navigator url=''>readmore</navigator>
+      </view>
+    </view>
+  </view>
+
+  <view class='block-title'>带路线的卡片</view>
+  <view class='card'>
+    <view class='card-route'>
+      <view class='card-route-item'>
+        <text>装货地</text>
+        <label>济南</label>
+      </view>
+      <icon class='route-icon far far-exchange'></icon>
+      <view class='card-route-item'>
+        <text>卸货地</text>
+        <label>青岛</label>
+      </view>
+    </view>
+    <view class='card-body'>
+    <text>Posted on January 18, 2016</text>
+    card-body
+    </view>
+    <view class='card-footer'>
+      <view class='card-before'>card-before</view>
+      <view class='card-after'>card-after</view>
+    </view>
+  </view>
+
+</view>

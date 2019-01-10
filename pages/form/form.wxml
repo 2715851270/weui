@@ -1,0 +1,175 @@
+<!--pages/form/form.wxml-->
+<view class='tips tips-danger'>卡号格式不正确</view>
+
+<view class='block-title'>输入错误</view>
+<view class='form-block'>
+  <view class='form-group error'>
+    <label class='form-label'>卡号</label>
+    <input class='form-control' value='招商银行 信用卡（8343）' placeholder='预设内容'></input>
+  </view>
+</view>
+
+
+<view class='block-title'>单项输入</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <label class='form-label'>单项输入</label>
+    <input class='form-control' placeholder='预设内容'></input>
+  </view>
+</view>
+
+<view class='block-title'>双行列表－有摘要</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <navigator class='form-control navigator-right'>
+      双行列表
+      <text class='form-abstrac'>描述信息</text>
+    </navigator>
+  </view>
+</view>
+
+<view class='block-title'>段落文字输入</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <textarea class='form-control' placeholder='预设内容'></textarea>
+  </view>
+</view>
+
+<view class='block-title'>固化字段</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <label class='form-label'>标准五个字</label>
+    <text class='form-control'>预设内容不超过一行，超出部分隐藏</text>
+  </view>
+</view>
+
+<view class='block-title'>多项输入</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <label class='form-label'>多项输入</label>
+    <input class='form-control' placeholder='预设内容'></input>
+    <view class='form-after'></view>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>多项输入</label>
+    <input class='form-control' placeholder='预设内容'></input>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>多项输入</label>
+    <input class='form-control' placeholder='预设内容'></input>
+  </view>
+</view>
+
+<view class='block-title'>组合样式</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <label class='form-label'>国家/地区</label>
+    <navigator class='form-control navigator-right'>中国</navigator>
+  </view>
+  <view class='form-group'>
+    <label class='form-label form-before' bindtap="actionSheetTap">+86</label>
+    <input class='form-control' placeholder='请填写手机号码'></input>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>选项</label>
+    <input class='form-control' placeholder='wording可配置'></input>
+  </view>
+</view>
+
+<view class='block-title'>picker 选择器</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <label class='form-label'>普通选择器</label>
+    <picker class='form-control navigator-right' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">{{array[index]}}</picker>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>多列选择器</label>
+    <picker class='form-control navigator-right' bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" mode="multiSelector" value="{{multiIndex}}" range="{{multiArray}}">{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}</picker>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>时间选择器</label>
+    <picker class='form-control navigator-right' bindchange="bindTimeChange" mode="time" value="{{time}}" start="00:00" end="23:59">{{time}}</picker>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>日期选择器</label>
+    <picker class='form-control navigator-right' bindchange="bindDateChange" mode="date" value="{{date}}" start="2018-01-01" end="2018-12-31">{{date}}</picker>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>省市区选择器</label>
+    <picker class='form-control navigator-right' bindchange="bindRegionChange" mode="region" value="{{region}}" custom-item="{{customItem}}">{{region[0]}}，{{region[1]}}，{{region[2]}}</picker>
+  </view>
+</view>
+
+<view class='block-title'>拉起 ActionSheet</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <label class='form-label'>选择器</label>
+    <view class='form-control navigator-right' bindtap="actionSheetTap">预设内容</view>
+  </view>
+</view>
+
+<view class='block-title'>开关</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <label class='form-label'>开启中</label>
+    <view class='form-control'>
+      <switch checked bindchange="switch" />
+    </view>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>关闭</label>
+    <view class='form-control'>
+      <switch bindchange="switch2" />
+    </view>
+  </view>
+</view>
+
+<view class='block-title'>多选</view>
+<checkbox-group class='form-block' bindchange="checkboxChange">
+  <view class='form-group' wx:for="{{items}}">
+    <label class="form-control checkbox">
+      <checkbox value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+    </label>
+  </view>
+</checkbox-group>
+
+<view class='block-title'>单选</view>
+<radio-group class='form-block' bindchange="radioChange">
+  <view class='form-group' wx:for="{{items}}">
+    <label class="form-control radio">
+      <radio value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+    </label>
+  </view>
+</radio-group>
+
+
+<view class='block-title'>组合样式</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <navigator class='form-control navigator-right'>广东省广州市新港中路TIT创意园腾讯自编八号楼前台</navigator>
+  </view>
+</view>
+
+
+<view class='block-title'>图片（提供图片输入）</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <view class='form-upload'>
+      <view class='upload-item'>
+        <image mode='aspectFill' src='{{images}}'></image>
+      </view>
+      <view class='upload-item add'></view>
+    </view>
+  </view>
+</view>
+
+<view class='form-agreement'>
+  <label class="checkbox">
+    <checkbox value="" checked="{{true}}" /> 已阅读并同意<navigator url='#'>《借款额度合同及相关授权》</navigator>
+  </label>
+</view>
+
+<view class='form-action'>
+  <button type='primary'>主要按钮</button>
+  <button type='default'>次要按钮</button>
+</view>

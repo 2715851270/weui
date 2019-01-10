@@ -1,0 +1,71 @@
+<!--pages/button/button.wxml-->
+
+<view class='container'>
+
+  <view class='block-title'>基础按钮</view>
+  <view class='block'>
+    <view class='block-content'>
+      <button type='default'>Default</button>
+      <button type='primary'>Primary</button>
+      <button type='success'>Success</button>
+      <button type='warning'>Warning</button>
+      <button type='danger'>Danger</button>
+    </view>
+  </view>
+
+  <view class='block-title'>mini按钮</view>
+  <view class='block'>
+    <view class='block-content'>
+      <button type='default' size='mini'>Default</button>
+      <button type='primary' size='mini'>Primary</button>
+      <button type='success' size='mini'>Success</button>
+      <button type='warning' size='mini'>Warning</button>
+      <button type='danger' size='mini'>Danger</button>
+    </view>
+  </view>
+
+  <view class='block-title'>禁用按钮</view>
+  <view class='block'>
+    <view class='block-content'>
+      <button type='default' size='mini' disabled>Default</button>
+      <button type='primary' size='mini' disabled>Primary</button>
+      <button type='success' size='mini' disabled>Success</button>
+      <button type='warning' size='mini' disabled>Warning</button>
+      <button type='danger' size='mini' disabled>Danger</button>
+    </view>
+  </view>
+
+  <view class='block-title'>带阴影的按钮</view>
+  <view class='block'>
+    <view class='block-content'>
+      <button class='shadow' type='default' size='mini'>Default</button>
+      <button class='shadow' type='primary' size='mini'>Primary</button>
+      <button class='shadow' type='success' size='mini'>Success</button>
+      <button class='shadow' type='warning' size='mini'>Warning</button>
+      <button class='shadow' type='danger' size='mini'>Danger</button>
+    </view>
+  </view>
+
+  <view class='block-title'>镂空的按钮</view>
+  <view class='block'>
+    <view class='block-content'>
+      <button type='default' size='mini' plain>Default</button>
+      <button type='primary' size='mini' plain>Primary</button>
+      <button type='success' size='mini' plain>Success</button>
+      <button type='warning' size='mini' plain>Warning</button>
+      <button type='danger' size='mini' plain>Danger</button>
+    </view>
+  </view>
+
+  <view class='block-title'>圆角按钮</view>
+  <view class='block'>
+    <view class='block-content'>
+      <button class='radius' type='default' size='mini'>Default</button>
+      <button class='radius' type='primary' size='mini'>Primary</button>
+      <button class='radius' type='success' size='mini'>Success</button>
+      <button class='radius' type='warning' size='mini'>Warning</button>
+      <button class='radius' type='danger' size='mini'>Danger</button>
+    </view>
+  </view>
+  
+</view>

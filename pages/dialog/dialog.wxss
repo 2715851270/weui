@@ -1,0 +1,106 @@
+/* pages/dialog/dialog.wxss */
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 600rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #fff;
+  margin: -200rpx auto;
+  border-radius: 4rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #101113;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 96rpx;
+  border-top: 1px solid #dcdfe6;
+  font-size: 34rpx;
+  line-height: 96rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dcdfe6;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #409eff;
+  text-align: center;
+}
+
+.dialog-msg {
+  top: 30%;
+  background: none;
+}
+
+.dialog-msg .modal-images {
+  position: relative;
+  width: 100%;
+  height: 300rpx;
+}
+
+.dialog-msg .modal-images text {
+  position: absolute;
+  top: 170rpx;
+  left: 115rpx;
+  font-size: 22rpx;
+  color: #fff;
+  text-shadow: 0 2rpx 4rpx rgba(0, 0, 0, 0.35);
+}
+
+.dialog-msg .modal-content, .dialog-msg .modal-footer {
+  background-color: #fff;
+}
+
+.dialog-msg .modal-content {
+  margin-bottom: 0;
+  padding: 20rpx 60rpx;
+}
+
+.dialog-msg .modal-content text {
+  display: block;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+}
+
+.dialog-msg .modal-footer {
+  border: none;
+  height: auto;
+  padding: 40rpx;
+}
+
+.dialog-msg .modal-footer .btn-confirm {
+  width: 100%;
+  font-size: 28rpx;
+}

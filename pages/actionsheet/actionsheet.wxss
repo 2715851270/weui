@@ -1,0 +1,15 @@
+/* pages/actionsheet/actionsheet.wxss */
+
+action-sheet-item {
+  background-color: #fff;
+  position: relative;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 32rpx;
+  display: block;
+}
+
+action-sheet-cancel {
+  background-color: #fff;
+  font-size: 32rpx;
+}

@@ -1,0 +1,68 @@
+<!--pages/color/color.wxml-->
+<view class='container'>
+
+  <view class='block-title'>Gray</view>
+  <view class='colorBox'>
+    <view class='color-item'>
+      <label class='bg-black'></label>
+      <text class='black'>black</text>
+    </view>
+    <view class='color-item'>
+      <label class='bg-dark'></label>
+      <text class='dark'>dark</text>
+    </view>
+    <view class='color-item'>
+      <label class='bg-muted'></label>
+      <text class='muted'>muted</text>
+    </view>
+    <view class='color-item'>
+      <label class='bg-light'></label>
+      <text class='light'>light</text>
+    </view>
+    <view class='color-item'>
+      <label class='bg-border'></label>
+      <text class='border'>border</text>
+    </view>
+    <view class='color-item'>
+      <label class='bg-background'></label>
+      <text class='background'>background</text>
+    </view>
+  </view>
+
+  <view class='block-title'>Color</view>
+  <view class='colorBox'>
+    <view class='color-item'>
+      <label class='bg-primary'></label>
+      <text class='primary'>primary</text>
+    </view>
+    <view class='color-item'>
+      <label class='bg-success'></label>
+      <text class='success'>success</text>
+    </view>
+    <view class='color-item'>
+      <label class='bg-danger'></label>
+      <text class='danger'>danger</text>
+    </view>
+    <view class='color-item'>
+      <label class='bg-warning'></label>
+      <text class='warning'>warning</text>
+    </view>
+    <view class='color-item'>
+      <label class='bg-info'></label>
+      <text class='info'>info</text>
+    </view>
+  </view>
+
+  <view class='block-title'>Text</view>
+  <view class='colorBox'>
+    <view class='color-item'>
+      <label class='bg-secondary'></label>
+      <text class='secondary'>secondary</text>
+    </view>
+    <view class='color-item '>
+      <label class='bg-link'></label>
+      <text class='link'>link</text>
+    </view>
+  </view>
+
+</view>

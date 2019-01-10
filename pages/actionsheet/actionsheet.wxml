@@ -1,0 +1,5 @@
+<!--pages/actionsheet/actionsheet.wxml-->
+
+<view class='container'>
+  <button type="default" bindtap="actionSheetTap">打开ActionSheet</button>
+</view>

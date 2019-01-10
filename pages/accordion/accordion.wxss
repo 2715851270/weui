@@ -1,0 +1,32 @@
+/* pages/accordion/accordion.wxss */
+
+.panel {
+  background-color: #fff;
+}
+
+.panel-header {
+  padding: 15rpx 40rpx;
+  border-bottom: 1rpx solid #ebeef5;
+}
+
+.panel-header::before {
+  font-family: "ant";
+  content: "\e99a";
+  padding: 8rpx 0;
+  vertical-align: middle;
+  font-size: 20rpx;
+  color: #353535;
+  margin: 0 10rpx 0 -10rpx;
+}
+
+.panel-header.up::before {
+  content: "\e99c";
+}
+
+.panel-body {
+  padding: 30rpx 40rpx;
+}
+
+.panel + .panel {
+  margin-top: 20rpx;
+}

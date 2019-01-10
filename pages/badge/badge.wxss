@@ -1,0 +1,50 @@
+/* pages/badge/badge.wxss */
+
+.badge {
+  display: inline-block;
+  font-size: 24rpx;
+  color: #303133;
+  padding: 5rpx 10rpx;
+  background-color: #fff;
+  border: 1rpx solid #dcdfe6;
+  border-radius: 100rpx;
+  line-height: 1;
+}
+
+.badge.sm {
+  font-size: 20rpx;
+}
+
+.badge.spot {
+  padding: 5rpx;
+}
+
+.badge-primary, .badge-danger, .badge-success {
+  color: #fff;
+}
+
+.badge-primary {
+  background-color: #409EFF;
+  border-color: #409EFF;
+}
+
+.badge-success {
+  background-color: #67C23A;
+  border-color: #67C23A;
+}
+
+.badge-danger {
+  background-color: #e64340;
+  border-color: #e64340;
+}
+
+.badge-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #1a1a1a;
+}
+
+.table-view-cell .badge {
+  float: right;
+  margin: 6rpx;
+}

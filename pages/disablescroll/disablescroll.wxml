@@ -1,0 +1,5 @@
+<!--pages/disablescroll/disablescroll.wxml-->
+
+<view class='scroll-wrapper'>
+  <text>在 pages.json 中设置 "disableScroll": true，则页面整体不能上下滚动。</text>
+</view>

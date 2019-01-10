@@ -1,0 +1,40 @@
+<!--pages/dialog/dialog.wxml-->
+<view class='container'>
+
+  <button type="default" bindtap="actionToast">显示消息提示框</button>
+  <button type="default" bindtap="actionLoading">显示loading</button>
+  <button type="default" bindtap="actionModal">显示模态对话框</button>
+  <button type="default" bindtap="actionCusModal">自定义模态框</button>
+  <button type="default" bindtap="actionMsgModal">通知模态框</button>
+</view>
+
+<view class='modal' wx:if="{{showModal}}">
+  <view class="modal-dialog">
+    <view class="modal-title">Modal title</view>
+    <view class="modal-content">Custom</view>
+    <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+      <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+    </view>
+  </view>
+  <view class='modal-mask' bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+</view>
+
+<view class='modal' wx:if="{{showMsgModal}}">
+  <view class="modal-dialog dialog-msg">
+    <view class="modal-images">
+      <image src='/images/updata.png'></image>
+      <text>V2.1.0</text>
+    </view>
+    <view class="modal-content">
+      <text>1. 修复了一些BUG</text>
+      <text>2. 优化了部分功能</text>
+      <text>3. 全新的UI界面</text>
+      <text>4. 更多丰富精选内容</text>
+    </view>
+    <view class="modal-footer">
+      <button type='primary' class="btn-confirm shadow" bindtap="onread" data-status="confirm">我知道了</button>
+    </view>
+  </view>
+  <view class='modal-mask' bindtap="hideMsgModal" catchtouchmove="preventMsgTouchMove" wx:if="{{showMsgModal}}"></view>
+</view>

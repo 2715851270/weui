@@ -1,0 +1,48 @@
+<!--pages/badge/badge.wxml-->
+
+<view class='container'>
+
+  <view class='block'>
+    <view class='block-title'>角标样式</view>
+    <view class='block-content'>
+      <label class='badge'>24</label>
+      <label class='badge badge-primary'>6</label>
+      <label class='badge badge-danger'>99+</label>
+      <label class='badge badge-warning'>10+</label>
+      <label class='badge badge-success'>10+</label>
+    </view>
+  </view>
+
+  <view class='block'>
+    <view class='block-title'>小号角标</view>
+    <view class='block-content'>
+      <label class='badge sm'>24</label>
+      <label class='badge sm badge-primary'>6</label>
+    </view>
+  </view>
+
+  <view class='block'>
+    <view class='block-title'>状态点</view>
+    <view class='block-content'>
+      <label class='badge spot badge-danger'></label>
+      <label class='badge spot badge-primary'></label>
+      <label class='badge spot badge-warning'></label>
+      <label class='badge spot badge-success'></label>
+    </view>
+  </view>
+
+  <view class='block'>
+    <view class='block-title'>列表中的角标</view>
+    <view class='block-content'>
+      <view class='table-view'>
+          <view class='table-view-cell'>
+            <navigator url='' class='navigator-right'>list-item1 <label class='badge'>24</label></navigator>
+          </view>
+          <view class='table-view-cell'>
+            <navigator url='' class='navigator-right'>list-item2 <label class='badge badge-primary'>6</label></navigator>
+          </view>
+      </view>
+    </view>
+  </view>
+
+</view>
