@@ -71,4 +71,4 @@
 
 # 关于
 
-<h4>Desgin by <a href="http://www.deajax.com">Deajax</a></h4>
+<h4>Desgined by <a href="http://www.deajax.com">Deajax</a></h4>
