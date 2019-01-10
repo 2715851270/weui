@@ -1,0 +1,14 @@
+<!--pages/offcanvas/offcanvas.wxml-->
+
+<view class="page">
+  <view class="page-sider">
+    <view class="page-sider-inner">
+      page-sider-inner
+    </view>
+  </view>
+  <view bindtouchmove="tap_drag" bindtouchend="tap_end" class="page-wrapper {{open ? 'open' : ''}}">
+    <button class='offcanvas-btn' size='mini' bindtap="tap_ch">
+      <icon class='ionm ion-md-menu'></icon>
+    </button>
+  </view>
+</view>

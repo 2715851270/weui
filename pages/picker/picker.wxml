@@ -1,0 +1,31 @@
+<!--pages/picker/picker.wxml-->
+<view class='block-title'>picker 选择器</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <label class='form-label'>普通选择器</label>
+    <picker class='form-control navigator-right' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">{{array[index]}}</picker>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>多列选择器</label>
+    <picker class='form-control navigator-right' bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" mode="multiSelector" value="{{multiIndex}}" range="{{multiArray}}">{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}</picker>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>时间选择器</label>
+    <picker class='form-control navigator-right' bindchange="bindTimeChange" mode="time" value="{{time}}" start="00:00" end="23:59">{{time}}</picker>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>日期选择器</label>
+    <picker class='form-control navigator-right' bindchange="bindDateChange" mode="date" value="{{date}}" start="2018-01-01" end="2018-12-31">{{date}}</picker>
+  </view>
+  <view class='form-group'>
+    <label class='form-label'>省市区选择器</label>
+    <picker class='form-control navigator-right' bindchange="bindRegionChange" mode="region" value="{{region}}" custom-item="{{customItem}}">{{region[0]}}，{{region[1]}}，{{region[2]}}</picker>
+  </view>
+</view>
+
+<view class='block-title'>picker 按钮</view>
+<view class='form-block'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <button type='default'>{{array[index]}}</button>
+  </picker>
+</view>

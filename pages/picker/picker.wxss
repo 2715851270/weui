@@ -1,0 +1,13 @@
+/* pages/picker/picker.wxss */
+
+.picker {
+  margin-right: -46rpx;
+}
+
+.picker::after {
+  font-family: "ionicon android";
+  content: "\f3a9";
+  display: inline-block;
+  font-size: 28rpx;
+  margin: 0 10rpx;
+}

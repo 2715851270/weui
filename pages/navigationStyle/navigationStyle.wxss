@@ -1,0 +1,55 @@
+/* pages/navbar/navbar.wxss */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 40rpx;
+  background: #fff;
+  z-index: 90;
+}
+
+.navbar navigator {
+  float: left;
+  width: 88rpx;
+  height: 88rpx;
+  text-align: center;
+}
+
+.navbar navigator.icon {
+  display: block;
+  width: 88rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 50rpx;
+  color: #101113;
+}
+
+.navbar .navtitle {
+  line-height: 88rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+  padding-right: 88rpx;
+}
+
+.navbar .search-view {
+  background-color: transparent !important;
+  border: none !important;
+  float: left;
+  width: 360rpx;
+}
+
+.navbar .search-input {
+  border-radius: 100rpx;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar .placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar ~ .container {
+  padding-top: 128rpx;
+}

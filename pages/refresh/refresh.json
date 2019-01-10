@@ -1,0 +1,6 @@
+{
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "refresh": "/components/RefreshView/refresh-view"
+  }
+}

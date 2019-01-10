@@ -1,0 +1,126 @@
+/* pages/login/login.wxss */
+
+page {
+  background-color: #fff;
+}
+
+.login-page-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  transition: All 0.6s ease;
+  -webkit-transition: All 0.6s ease;
+  box-shadow: 0 0 80rpx rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.login-page-wrap + .login-page-wrap {
+  z-index: 1;
+}
+
+.login-page-wrap.open {
+  transform: rotate(0deg) scale(1) translate(-100%, 0%);
+  -webkit-transform: rotate(0deg) scale(1) translate(-100%, 0%);
+}
+
+.loginbox {
+  padding: 40rpx 60rpx;
+}
+
+.login-logo {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 20rpx;
+  background-color: #409eff;
+  box-shadow: 0 8rpx 24rpx rgba(14, 113, 214, 0.25);
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+
+.login-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  padding: 10rpx;
+  margin-bottom: 40rpx;
+}
+
+.login-logo ~ .login-title {
+  text-align: center;
+}
+
+.login-form {
+}
+
+.login-form-group {
+  position: relative;
+  display: flex;
+  margin: 10rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1rpx solid #ebeef5;
+}
+
+.login-form-group icon {
+  flex: 0 0 80rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+}
+
+.login-form-group::before {
+  content: '';
+  position: absolute;
+  width: 1rpx;
+  height: 32rpx;
+  background-color: #dcdfe6;
+  left: 56rpx;
+  top: 28rpx;
+}
+
+.login-form-control {
+  flex: 1;
+  height: 88rpx;
+  min-height: 88rpx;
+  line-height: 88rpx;
+  font-size: 28rpx;
+}
+
+.login-placeholder {
+  color: #c0c4cc;
+}
+
+.vrcode {
+  border: none;
+  border-left: 1rpx solid #dcdfe6;
+  padding: 0 20rpx;
+  line-height: 32rpx;
+  border-radius: 0;
+  background: none;
+  min-height: auto;
+  height: 32rpx;
+  margin: 28rpx 0;
+  font-size: 26rpx;
+}
+
+.vrcode::after {
+  border: none;
+}
+
+.login-form-action {
+  margin-top: 60rpx;
+}
+
+.login-form-action button {
+  border-radius: 10rpx;
+}
+
+.switchMode {
+  width: 300rpx;
+  padding: 10rpx;
+  margin: 0 auto 20rpx;
+  font-size: 24rpx;
+  color: #576b95;
+  text-align: center;
+}

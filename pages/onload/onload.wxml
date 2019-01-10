@@ -1,0 +1,6 @@
+<!--pages/onload/onload.wxml-->
+<view class='onload'>
+    <view class='loading' wx:if="{{showLoading}}"></view>
+    <label wx:if="{{showError}}">加载失败</label>
+    <button class='radius' type='default' wx:if="{{showError}}" bindtap='showLoading' size='mini'>重新加载</button>
+</view>

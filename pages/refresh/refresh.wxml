@@ -1,0 +1,17 @@
+<!--pages/refresh/refresh.wxml-->
+<refresh id='RefreshView' backgroundColor="#000" bind:onRefresh="onPullDownRefresh" bind:onPullState="_pullState" />
+
+<view class='container' bindtouchstart='handletouchstart' bindtouchmove='handletouchmove' bindtouchend='handletouchend' bindtouchcancel='handletouchcancel'>
+  <view class='block-title'>列表</view>
+  <view class='table-view'>
+    <view class='table-view-cell'>
+      <navigator url='' class='navigator-right'>标题</navigator>
+    </view>
+    <view class='table-view-cell'>
+      <navigator url='' class='navigator-right'>标题</navigator>
+    </view>
+    <view class='table-view-cell'>
+      <navigator url='' class='navigator-right'>标题</navigator>
+    </view>
+  </view>
+</view>

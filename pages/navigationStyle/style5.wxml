@@ -1,0 +1,8 @@
+<!--pages/navigationStyle/style5.wxml-->
+
+<view class='navbar'>
+  <navigator open-type='navigateBack' class='icon ioni ion-ios-arrow-back'></navigator>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class='navtitle'>
+    <view class='picker'>{{region[2]}}</view>
+  </picker>
+</view>

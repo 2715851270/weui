@@ -1,0 +1,239 @@
+<!--pages/grid/grid.wxml-->
+
+<view class='container'>
+  <view class='block-title'>栅格</view>
+
+  <view class='bg-light mb-20'>
+    <view class='row'>
+      <view class='col-12'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>100%</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='bg-light mb-20'>
+    <view class='row'>
+      <view class='col-3'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>25%</view>
+      </view>
+      <view class='col-3'>
+        <view style='line-height:100rpx;text-align:center;'>25%</view>
+      </view>
+      <view class='col-3'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>25%</view>
+      </view>
+      <view class='col-3'>
+        <view style='line-height:100rpx;text-align:center;'>25%</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='bg-light mb-20'>
+    <view class='row'>
+      <view class='col-4'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>33.33%</view>
+      </view>
+      <view class='col-4'>
+        <view style='line-height:100rpx;text-align:center;'>33.33%</view>
+      </view>
+      <view class='col-4'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>33.33%</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='bg-light mb-20'>
+    <view class='row'>
+      <view class='col-6'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>50%</view>
+      </view>
+      <view class='col-6'>
+        <view style='line-height:100rpx;text-align:center;'>50%</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='bg-light mb-20'>
+    <view class='row'>
+      <view class='col-8'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>66.66%</view>
+      </view>
+      <view class='col-4'>
+        <view style='line-height:100rpx;text-align:center;'>33.33%</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
+<view class='container'>
+  <view class='block-title'>列偏移</view>
+
+  <view class='bg-light mb-20'>
+    <view class='row'>
+      <view class='col-4'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-4</view>
+      </view>
+      <view class='col-4 col-offset-4'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>offset-4</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='bg-light mb-20'>
+    <view class='row'>
+      <view class='col-3 col-offset-3'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>offset-3</view>
+      </view>
+      <view class='col-3 col-offset-3'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>offset-3</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='bg-light mb-20'>
+    <view class='row'>
+      <view class='col-6 col-offset-3'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-6 offset-3</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class='container'>
+  <view class='block-title'>Flex 布局</view>
+
+  <view class='block-title'>Align Top</view>
+  <view class='bg-light mb-20 p-20'>
+    <view class='row align-start'>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='block-title'>Align Center</view>
+  <view class='bg-light mb-20 p-20'>
+    <view class='row align-center'>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='block-title'>Align Bottom</view>
+  <view class='bg-light mb-20 p-20'>
+    <view class='row align-end'>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class='container'>
+  <view class='block-title'>Flex 布局</view>
+
+  <view class='block-title'>Space Around</view>
+  <view class='bg-light mb-20 p-20'>
+    <view class='row space-around'>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='block-title'>Space Between</view>
+  <view class='bg-light mb-20 p-20'>
+    <view class='row space-between'>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='block-title'>Justify Start</view>
+  <view class='bg-light mb-20 p-20'>
+    <view class='row justify-start'>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='block-title'>Justify End</view>
+  <view class='bg-light mb-20 p-20'>
+    <view class='row justify-end'>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:100rpx;text-align:center;color:#fff;' class='bg-primary'>col-2</view>
+      </view>
+      <view class='col-2'>
+        <view style='line-height:50rpx;text-align:center;color:#fff;' class='bg-info'>col-2</view>
+      </view>
+    </view>
+  </view>
+
+</view>

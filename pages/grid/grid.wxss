@@ -1,0 +1,171 @@
+/* pages/grid/grid.wxss */
+
+.row {
+  position: relative;
+  display: flex;
+  flex-flow: wrap;
+  margin-left: -10rpx;
+  margin-right: -10rpx;
+}
+
+.column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.col, .col-auto, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8,
+.col-9, .col-10, .col-11, .col-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10rpx;
+  padding-left: 10rpx;
+}
+
+.col {
+  flex: 1;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.col-11 {
+  flex: 0 0 91.66666667%;
+  max-width: 91.66666667%;
+}
+
+.col-10 {
+  flex: 0 0 83.33333333%;
+  max-width: 83.33333333%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-8 {
+  flex: 0 0 66.66666667%;
+  max-width: 66.66666667%;
+}
+
+.col-7 {
+  flex: 0 0 58.33333333%;
+  max-width: 58.33333333%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-5 {
+  flex: 0 0 41.66666667%;
+  max-width: 41.66666667%;
+}
+
+.col-4 {
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-2 {
+  flex: 0 0 16.66666667%;
+  max-width: 16.66666667%;
+}
+
+.col-1 {
+  flex: 0 0 8.33333333%;
+  max-width: 8.33333333%;
+}
+
+.col-offset-12 {
+  margin-left: 100%;
+}
+
+.col-offset-11 {
+  margin-left: 91.66666667%;
+}
+
+.col-offset-10 {
+  margin-left: 83.33333333%;
+}
+
+.col-offset-9 {
+  margin-left: 75%;
+}
+
+.col-offset-8 {
+  margin-left: 66.66666667%;
+}
+
+.col-offset-7 {
+  margin-left: 58.33333333%;
+}
+
+.col-offset-6 {
+  margin-left: 50%;
+}
+
+.col-offset-5 {
+  margin-left: 41.66666667%;
+}
+
+.col-offset-4 {
+  margin-left: 33.33333333%;
+}
+
+.col-offset-3 {
+  margin-left: 25%;
+}
+
+.col-offset-2 {
+  margin-left: 16.66666667%;
+}
+
+.col-offset-1 {
+  margin-left: 8.33333333%;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}

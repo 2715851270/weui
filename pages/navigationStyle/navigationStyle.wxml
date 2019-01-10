@@ -1,0 +1,19 @@
+<!--pages/navbar/navbar.wxml-->
+
+<view class='table-view'>
+  <view class='table-view-cell'>
+    <navigator url='style1' class='navigator-right'>默认样式</navigator>
+  </view>
+  <view class='table-view-cell'>
+    <navigator url='style2' class='navigator-right'>带搜索栏的标题栏</navigator>
+  </view>
+  <view class='table-view-cell'>
+    <navigator url='style3' class='navigator-right'>带Tabs的标题栏</navigator>
+  </view>
+  <view class='table-view-cell'>
+    <navigator url='style4' class='navigator-right'>刘海屏</navigator>
+  </view>
+  <view class='table-view-cell'>
+    <navigator url='style5' class='navigator-right'>带picker的标题栏</navigator>
+  </view>
+</view>

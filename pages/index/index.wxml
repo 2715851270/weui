@@ -1,0 +1,15 @@
+<view class='table-view'>
+  <block wx:for='{{index}}' wx:key='index'>
+    <view class='table-view-cell'>
+      <navigator url='{{item.url}}' class='navigator-right'>{{item.name}}</navigator>
+    </view>
+  </block>
+</view>
+
+<view class='table-view'>
+  <block wx:for='{{example}}' wx:key='example'>
+    <view class='table-view-cell'>
+      <navigator url='{{item.url}}' class='navigator-right'>{{item.name}}</navigator>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/icon/fontawsome.wxml-->
+
+<view class='container'>
+
+  <view class="markdown">
+    <label class='markdown-title'>fontawsome 5.6.3 regular 图标</label>
+    <text class='markdown-text'>点击复制图标名, 使用方法: icon class='粘贴图标名'</text>
+    <view class="icon_lists clear">
+
+      <block wx:for='{{fontclass}}' wx:key=''>
+        <view class="icon-li" bindtap="copyfont" data-text="far far-{{item.fontname}}">
+          <icon class="icon far far-{{item.fontname}}"></icon>
+          <view class="name">{{item.fontname}}</view>
+        </view>
+      </block>
+
+    </view>
+  </view>
+
+</view>

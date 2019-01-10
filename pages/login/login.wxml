@@ -1,0 +1,50 @@
+<!--pages/login/login.wxml-->
+
+<view class='login-page-wrap {{open ? "open" : ""}}'>
+  <view class='loginbox'>
+    <view class='login-logo'></view>
+    <view class='login-title'>Lucktroy</view>
+    <view class='login-form'>
+      <view class='login-form-group'>
+        <icon class='ant icon-mobile'></icon>
+        <input type='number' class='login-form-control' placeholder='请输入手机号码' placeholder-class='login-placeholder'></input>
+      </view>
+      <view class='login-form-group'>
+        <icon class='ant icon-unlock'></icon>
+        <input class='login-form-control' placeholder='请输入密码'  placeholder-class='login-placeholder' password></input>
+      </view>
+      <view class='login-form-action'>
+        <button class='shadow' type='primary'>登录</button>
+      </view>
+    </view>
+  </view>
+
+  <view class='loginbox'>
+    <view class='switchMode' bindtap="tap_ch">使用短信验证码登录</view>
+  </view>
+</view>
+
+<view class='login-page-wrap'>
+  <view class='loginbox'>
+    <view class='login-logo'></view>
+    <view class='login-title'>Lucktroy</view>
+    <view class='login-form'>
+      <view class='login-form-group'>
+        <icon class='ant icon-mobile'></icon>
+        <input type='number' class='login-form-control' placeholder='请输入手机号码' placeholder-class='login-placeholder'></input>
+      </view>
+      <view class='login-form-group'>
+        <icon class='ant icon-safetycertificate'></icon>
+        <input type='number' class='login-form-control' placeholder='请输入验证码' placeholder-class='login-placeholder'></input>
+        <button class='vrcode'>获取验证码</button>
+      </view>
+      <view class='login-form-action'>
+        <button class='shadow' type='primary'>登录</button>
+      </view>
+    </view>
+  </view>
+
+  <view class='loginbox'>
+    <view class='switchMode' bindtap="tap_ch">使用密码登录</view>
+  </view>
+</view>

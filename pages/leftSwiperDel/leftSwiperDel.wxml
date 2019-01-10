@@ -1,0 +1,10 @@
+<!--pages/leftSwiperDel/leftSwiperDel.wxml-->
+
+<view class='table-view'>
+  <block wx:for="{{list}}"  wx:key="{{index}}">
+    <view class='table-view-cell'>
+      <view bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.style}}" class="table-view-inner">{{item.title}}</view>
+      <view data-index="{{index}}" bindtap = "delItem" class="table-view-del">删除</view>
+    </view>
+  </block>
+</view>

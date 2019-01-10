@@ -1,0 +1,107 @@
+<!--pages/list/list.wxml-->
+
+<view class='table-view'>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>
+      单行列表
+      <text class='table-view-after'>详细信息</text>
+    </navigator>
+  </view>
+</view>
+
+<view class='table-view'>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>单行列表</navigator>
+  </view>
+</view>
+
+<view class='table-view'>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>
+      文字列表
+      <text class='media-ellipsis'>由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</text>
+    </navigator>
+  </view>
+</view>
+
+<view class='block-title'>多行列表</view>
+<view class='table-view'>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>多行列表</navigator>
+  </view>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>多行列表</navigator>
+  </view>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>多行列表</navigator>
+  </view>
+</view>
+
+<view class='table-view'>
+  <view class='table-view-cell media-list'>
+    <navigator url='' class='navigator-right'>
+      <view class='media-object pull-left'>
+        <image src='{{images}}' mode='aspectFill'></image>
+      </view>
+      <view class='media-body'>
+        图文列表
+        <text class='media-ellipsis'>由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</text>
+      </view>
+    </navigator>
+  </view>
+  <view class='table-view-cell media-list'>
+    <navigator url='' class='navigator-right'>
+      <view class='media-object pull-left'>
+        <image src='{{images}}' mode='aspectFill'></image>
+      </view>
+      <view class='media-body'>
+        图文列表
+        <text class='media-ellipsis'>由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</text>
+      </view>
+    </navigator>
+  </view>
+  <view class='table-view-cell media-list'>
+    <navigator url='' class='navigator-right'>
+      <view class='media-object pull-left'>
+        <image src='{{images}}' mode='aspectFill'></image>
+      </view>
+      <view class='media-body'>
+        图文列表
+        <text class='media-ellipsis'>由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</text>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+<view class='table-view'>
+  <view class='table-view-cell media-list'>
+    <navigator url='' class='navigator-right'>
+      <view class='media-object sm pull-left'>
+        <image src='{{images}}' mode='aspectFill'></image>
+      </view>
+      <view class='media-body'>
+        小图文列表
+      </view>
+    </navigator>
+  </view>
+  <view class='table-view-cell media-list'>
+    <navigator url='' class='navigator-right'>
+      <view class='media-object sm pull-left'>
+        <image src='{{images}}' mode='aspectFill'></image>
+      </view>
+      <view class='media-body'>
+        小图文列表
+      </view>
+    </navigator>
+  </view>
+  <view class='table-view-cell media-list'>
+    <navigator url='' class='navigator-right'>
+      <view class='media-object sm pull-left'>
+        <image src='{{images}}' mode='aspectFill'></image>
+      </view>
+      <view class='media-body'>
+        小图文列表
+      </view>
+    </navigator>
+  </view>
+</view>

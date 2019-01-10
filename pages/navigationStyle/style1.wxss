@@ -1,0 +1,2 @@
+/* pages/navigationStyle/style1.wxss */
+@import "navigationStyle.wxss";

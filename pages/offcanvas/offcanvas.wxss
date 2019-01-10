@@ -1,0 +1,48 @@
+/* pages/offcanvas/offcanvas.wxss */
+
+.page {
+  height: 100%;
+}
+
+.page-sider {
+  height: 100%;
+  width: 100%;
+  padding-right: 25%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 0;
+}
+
+.wc {
+  color: white;
+  padding: 30rpx 0 30rpx 40rpx;
+}
+
+.page-sider-inner {
+}
+
+.page-wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f6;
+  z-index: 0;
+  transition: All 0.2s ease;
+  -webkit-transition: All 0.2s ease;
+}
+
+.page-wrapper .offcanvas-btn {
+  position: absolute;
+  width: 80rpx;
+  left: 20rpx;
+  top: 20rpx;
+  padding: 0;
+  text-align: center;
+  background-color: #fff;
+  font-size: 32rpx;
+}
+
+.page-wrapper.open {
+  transform: rotate(0deg) scale(1) translate(75%, 0%);
+  -webkit-transform: rotate(0deg) scale(1) translate(75%, 0%);
+}

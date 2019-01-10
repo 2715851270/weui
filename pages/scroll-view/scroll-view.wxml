@@ -1,0 +1,11 @@
+<!--pages/scroll-view/scroll-view.wxml-->
+
+<view class='scroll-wrapper'>
+  <view class='scroll'>
+
+    <view class='content'>
+      使用可滚动多试图区域，请先在 pages.json 中设置 "disableScroll": true，使页面整体固定，不能上下滚动。
+    </view>
+
+  </view>
+</view>

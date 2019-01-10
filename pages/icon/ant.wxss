@@ -1,0 +1,47 @@
+/* pages/icon/icon.wxss */
+@import "../../fonts/ant/ant.wxss";
+
+.markdown {
+  background: #fff;
+  padding: 40rpx 20rpx;
+  color: #303133;
+}
+
+.markdown-title {
+  display: block;
+  text-align: center;
+}
+
+.markdown-text {
+  display: block;
+  font-size: 24rpx;
+  color: #909399;
+  margin-bottom: 40rpx;
+  text-align: center;
+}
+
+.icon_lists {
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+}
+
+.icon_lists .icon-li {
+  flex: 0 0 23%;
+  width: 23%;
+  text-align: center;
+  margin: 0 1%;
+  margin-bottom: 30rpx;
+}
+
+.icon_lists .icon {
+  font-size: 64rpx;
+  line-height: 1.5;
+  color: #303133;
+}
+
+.icon_lists .name {
+  font-size: 20rpx;
+  line-height: 1.25;
+  margin-bottom: 10rpx;
+}

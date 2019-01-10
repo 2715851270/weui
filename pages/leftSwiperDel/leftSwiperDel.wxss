@@ -1,0 +1,34 @@
+/* pages/leftSwiperDel/leftSwiperDel.wxss */
+
+.table-view-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 2rpx;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+  padding: 20rpx 40rpx 22rpx;
+  transition: left 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-view-del {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 2rpx;
+  background-color: #e64340;
+  width: 180rpx;
+  padding: 20rpx 0 22rpx;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+
+.table-view-cell:first-child .table-view-inner,
+.table-view-cell:first-child .table-view-del {
+  top: 1rpx;
+}
