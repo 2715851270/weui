@@ -1,0 +1,358 @@
+@import "demo.wxss";
+@import "fonts/ant/ant.wxss";
+@import "fonts/fontawsome/regular.wxss";
+@import "fonts/ionicons/android.wxss";
+@import "fonts/ionicons/ios.wxss";
+
+:root {
+  /* color */
+  --black: #101113;
+  --dark: #303133;
+  --muted: #909399;
+  --light: #c0c4cc;
+  --placeholder: #dcdfe6;
+  --border: #ebeef5;
+  --background: #f4f4f6;
+  --primary: #409eff;
+  --success: #67c23a;
+  --danger: #e64340;
+  --warning: #ffc107;
+  --info: #36cfc9;
+  --secondary: #606266;
+  --link: #576b95;
+  /* hover */
+  --primary-hover: #2d8cf0;
+  --success-hover: #56b229;
+  --danger-hover: #d73336;
+  --warning-hover: #eeb200;
+  --info-hover: #22c1ba;
+  --secondary-hover: #303133;
+  --link-hover: #4a5f89;
+  /* text */
+  --display: 80rpx;
+  --medium: 40rpx;
+  --regular: 36rpx;
+  --default: 32rpx;
+  --text: 28rpx;
+  --subtext: 24rpx;
+  --smtext: 20rpx;
+  --blue: #1890ff;
+  --red: #e64340;
+  --separator: #dcdfe6;
+  --darken: #ebeef5;
+  --background: #f4f4f6;
+}
+
+/* common */
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+page {
+  background-color: #f4f4f6;
+  line-height: 1.6;
+  font-size: 32rpx;
+  color: #101113;
+}
+
+view, scroll-view, swiper, swiper-item, cover-view, cover-image, icon, text,
+rich-text, progress, button, checkbox-group, checkbox, form, input, label,
+picker, picker-view, radio-group, radio, slider, switch, textarea, navigator,
+functional-page-navigator, audio, image, video, camera, live-player, live-pusher,
+map, canvas {
+  box-sizing: border-box;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+navigator {
+  color: #576b95;
+}
+
+.navigator-hover {
+  background: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* layout */
+
+.container {
+  position: relative;
+  padding: 20rpx;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.m-10 {
+  margin: 10rpx !important;
+}
+
+.m-20 {
+  margin: 20rpx !important;
+}
+
+.m-30 {
+  margin: 30rpx !important;
+}
+
+.m-40 {
+  margin: 40rpx !important;
+}
+
+.mt-0 {
+  margin-left: 0 !important;
+}
+
+.mt-10 {
+  margin-left: 10rpx !important;
+}
+
+.mt-20 {
+  margin-left: 20rpx !important;
+}
+
+.mt-30 {
+  margin-left: 30rpx !important;
+}
+
+.mt-40 {
+  margin-left: 40rpx !important;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.mr-10 {
+  margin-right: 10rpx !important;
+}
+
+.mr-20 {
+  margin-right: 20rpx !important;
+}
+
+.mr-30 {
+  margin-right: 30rpx !important;
+}
+
+.mr-40 {
+  margin-right: 40rpx !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-10 {
+  margin-bottom: 10rpx !important;
+}
+
+.mb-20 {
+  margin-bottom: 20rpx !important;
+}
+
+.mb-30 {
+  margin-bottom: 30rpx !important;
+}
+
+.mb-40 {
+  margin-bottom: 40rpx !important;
+}
+
+.ml-0 {
+  margin-right: 0 !important;
+}
+
+.ml-10 {
+  margin-right: 10rpx !important;
+}
+
+.ml-20 {
+  margin-right: 20rpx !important;
+}
+
+.ml-30 {
+  margin-right: 30rpx !important;
+}
+
+.ml-40 {
+  margin-right: 40rpx !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-10 {
+  padding: 10rpx !important;
+}
+
+.p-20 {
+  padding: 20rpx !important;
+}
+
+.p-30 {
+  padding: 30rpx !important;
+}
+
+.p-40 {
+  padding: 40rpx !important;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pt-10 {
+  padding-top: 10rpx !important;
+}
+
+.pt-20 {
+  padding-top: 20rpx !important;
+}
+
+.pt-30 {
+  padding-top: 30rpx !important;
+}
+
+.pt-40 {
+  padding-top: 40rpx !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+.pr-10 {
+  padding-right: 10rpx !important;
+}
+
+.pr-20 {
+  padding-right: 20rpx !important;
+}
+
+.pr-30 {
+  padding-right: 30rpx !important;
+}
+
+.pr-40 {
+  padding-right: 40rpx !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pb-10 {
+  padding-bottom: 10rpx !important;
+}
+
+.pb-20 {
+  padding-bottom: 20rpx !important;
+}
+
+.pb-30 {
+  padding-bottom: 30rpx !important;
+}
+
+.pb-40 {
+  padding-bottom: 40rpx !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pl-10 {
+  padding-left: 10rpx !important;
+}
+
+.pl-20 {
+  padding-left: 20rpx !important;
+}
+
+.pl-30 {
+  padding-left: 30rpx !important;
+}
+
+.pl-40 {
+  padding-left: 40rpx !important;
+}
+
+
+/* import component */
+
+/* button */
+@import "pages/button/button.wxss";
+
+/* card */
+@import "pages/card/card.wxss";
+
+/* color */
+@import "pages/color/color.wxss";
+
+/* form */
+@import "pages/form/form.wxss";
+
+/* grid */
+@import "pages/grid/grid.wxss";
+
+/* list */
+@import "pages/list/list.wxss";
+
+/* swiper */
+@import "pages/swiper/swiper.wxss";
+
+/* tips */
+@import "pages/tips/tips.wxss";
+
+/* navigationStyle */
+@import "pages/navigationStyle/navigationStyle.wxss";
+
+/* search */
+@import "pages/search/search.wxss";
+
+/* loading */
+@import "pages/loading/loading.wxss";
+
+/* onload */
+@import "pages/onload/onload.wxss";
+
+/* tabs */
+@import "pages/tabbar/tabbar.wxss";
+
+/* picker */
+@import "pages/picker/picker.wxss";
+
+
+/* toolbar */
+@import "pages/toolbar/toolbar.wxss";
