@@ -1,0 +1,47 @@
+/* pages/swiper/swiper.wxss */
+
+.swiper-card {
+  height: 360rpx;
+}
+
+.swiper-card .swiper-card-item {
+  padding: 0 15rpx;
+  height: inherit;
+  position: relative;
+  overflow: unset;
+  transition: all linear 300ms;
+  transform: scale(0.95, 0.9);
+}
+
+.swiper-card .slide-image {
+  position: relative;
+  overflow: hidden;
+  height: 300rpx;
+  border-radius: 8px;
+  box-shadow: 0px 10rpx 20rpx 0px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-card .swiper-card-item.current {
+  transform: scale(1, 1);
+}
+
+swiper .wx-swiper-dot {
+  display: inline-flex;
+  justify-content: space-between;
+  transition: all linear 300ms;
+}
+
+swiper .wx-swiper-dot-active {
+  width: 30rpx;
+}
+
+swiper .wx-swiper-dot::before {
+  content: '';
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20rpx;
+}
+
+swiper .wx-swiper-dot-active::before {
+  background: #409EFF;
+}

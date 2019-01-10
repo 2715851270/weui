@@ -1,0 +1,2 @@
+<!--pages/tips/tips.wxml-->
+<view class='tips tips-danger'>您有1条新的短消息，请注意查收</view>

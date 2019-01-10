@@ -1,0 +1,15 @@
+<!--pages/toolbar/style2.wxml-->
+
+<view class='toolbar footer'>
+  <view class='footertool-view'>
+    合计：¥<label style='font-size:40rpx'>400.00</label>
+  </view>
+  <view class='footertool-action'>
+    <navigator url='' class='footertool-btn-next'>下一步</navigator>
+  </view>
+  
+</view>
+
+<view class='container'>
+  container
+</view>

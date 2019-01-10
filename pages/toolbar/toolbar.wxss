@@ -1,0 +1,81 @@
+/* pages/toolbar/toolbar.wxss */
+
+.toolbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+}
+
+.toolbar::after  {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.toolbar .tool-item {
+  position: relative;
+  z-index: 2;
+  width: 80rpx;
+  text-align: center;
+}
+
+.toolbar .tool-item icon {
+  font-size: 40rpx;
+  line-height: 88rpx;
+  color: #101113;
+}
+
+.toolbar .tabbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: none;
+  z-index: 1;
+}
+
+.toolbar .tabbar {
+  padding: 0;
+  border: none;
+}
+
+.toolbar.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 90;
+}
+
+.footertool-btn-next {
+  width: 240rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  text-align: center;
+  background-color: #409eff;
+  color: #fff;
+}
+
+.footertool-view {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  padding: 0 40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 24rpx;
+}
+
+
+
+
+.navbar ~ .toolbar {
+  top: 128rpx;
+}
+
+.toolbar.footer  ~ .container {
+  padding-bottom: 98rpx;
+}

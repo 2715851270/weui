@@ -1,0 +1,114 @@
+/* pages/tabbar/tabbar.wxss */
+
+.tabbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-bottom: 1rpx solid #ebeef5;
+}
+
+.tabbar.center {
+  justify-content: center;
+}
+
+.tabbar .tab-item {
+  padding: 20rpx;
+  line-height: 48rpx;
+  position: relative;
+  color: #909399;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.tabbar .tab-item.active {
+  color: #101113;
+}
+
+.tabbar .tab-item.active::after {
+  position: absolute;
+  content: '';
+  width: 60rpx;
+  height: 4rpx;
+  background-color: #409eff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.tab-scroll {
+  display: flex;
+  flex-flow: nowrap;
+  white-space: nowrap;
+}
+
+.tab-scroll .tab-view::before, .tab-scroll .tab-view::after {
+  display: inline-block;
+  content: '';
+  width: 40rpx;
+  height: 100%;
+}
+
+.tab-scroll .tab-item {
+  display: inline-block;
+  margin-right: 10rpx;
+}
+
+.tab-bd-item {
+  display: none;
+  background-color: #fff;
+}
+
+.tab-bd-item.active {
+  display: block;
+}
+
+.swiper-tab-item {
+  background-color: #fff;
+}
+
+.navbar .tabbar {
+  border: none !important;
+  padding-right: 88rpx;
+}
+
+.navbar .tabbar .tab-item {
+  padding: 22rpx 20rpx;
+}
+
+.tabcard {
+  padding: 0 20rpx;
+  height: 100rpx;
+  margin-bottom: 20rpx;
+}
+
+.tabcard .tab-item {
+  position: relative;
+  display: inline-block;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #909399;
+  padding: 18rpx 24rpx;
+  transition: all .2s ease;
+}
+
+.tabcard .tab-item:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 8rpx;
+  background-color: #409eff;
+  bottom: 10rpx;
+  left: 24rpx;
+  border-radius: 10rpx;
+  transition: all .2s ease;
+}
+
+.tabcard .tab-item.active {
+  transform: scale(1.5);
+  color: #101113;
+}
+
+.tabcard .tab-item.active:after {
+  width: 50rpx;
+}

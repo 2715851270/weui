@@ -1,0 +1,64 @@
+/* pages/ucenter/ucenter.wxss */
+
+.ucenter {
+  background: #fff;
+  margin-bottom: 1rpx;
+  padding: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  background-color: #dcdfe6;
+  border-radius: 8rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+
+.user-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name label {
+  font-size: 32rpx;
+  line-height: 1.2;
+}
+
+.user-name text {
+  font-size: 24rpx;
+  color: #c0c4cc;
+  line-height: 1.2;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  margin-bottom: 20rpx;
+  padding: 20rpx 40rpx;
+}
+
+.menu-item {
+  padding: 10rpx;
+  flex: 1;
+  text-align: center;
+}
+
+.menu-item icon {
+  display: block;
+  font-size: 54rpx;
+  line-height: 1.2;
+}
+
+.menu-item label {
+  font-size: 28rpx;
+  color: #303133;
+}

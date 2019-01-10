@@ -1,0 +1,28 @@
+<!--pages/swiper/swiper.wxml-->
+
+<view class='block-title'>基础功能展示</view>
+<swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='block-title'>卡片式 Swiper</view>
+<swiper class='swiper-card' bindchange='swiperChange' current="0" indicator-dots="{{true}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" previous-margin='{{margin}}rpx' next-margin='{{margin}}rpx'>
+  <block wx:for="{{imgUrls}}" wx:key="" wx:index="{{index}}">
+    <swiper-item>
+      <navigator url='#' class="swiper-card-item {{swiperIndex == index ? 'current' : ''}}">
+        <image src="{{item}}" class="slide-image" mode="aspectFill" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='container'>
+  <button bindtap="changeIndicatorDots">indicator-dots</button>
+  <button bindtap="changeAutoplay">autoplay</button>
+  <slider bindchange="intervalChange" show-value min="500" max="5000" /> interval
+  <slider bindchange="durationChange" show-value min="500" max="5000" /> duration
+</view>

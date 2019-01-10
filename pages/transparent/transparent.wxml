@@ -1,0 +1,21 @@
+<!--pages/transparent/transparent.wxml-->
+<view class='scroll-wrapper'>
+  <view class='navbar transparent' style="background:rgba({{navbarBackground}},{{scrollTop / 400 > 0.9 ? 0.9 : scrollTop / 400}});">
+    <navigator open-type='navigateBack' class='icon ioni ion-ios-arrow-back'></navigator>
+    <view class='search-view'>
+      <input type='text' class='search-input' confirm-type='search' placeholder='请输入搜索内容' placeholder-class='placeholder'/>
+    </view>
+  </view>
+
+  <scroll-view class='scroll' scroll-y="false" bindscroll="scroll">
+    <view class='container' style='height: 2000rpx;'>
+      <swiper class='swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="">
+          <swiper-item>
+            <image src="{{item}}" class="slide-image" mode="aspectFill" width="355" height="200" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </scroll-view>
+</view>

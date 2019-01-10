@@ -1,0 +1,71 @@
+/* pages/search/search.wxss */
+
+.search-view {
+  position: relative;
+  display: flex;
+  padding: 12rpx 16rpx;
+  background-color: #f2f2f4;
+  border-bottom: 1rpx solid #ebeef5;
+}
+
+.search-view::before {
+  position: absolute;
+  content: '';
+  width: 42rpx;
+  height: 42rpx;
+  left: 32rpx;
+  top: 22rpx;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25px' height='25px'%3E%3Cpath fill-rule='evenodd' fill='rgba%280, 0, 0,0.35%29' d='M9.995,17.992 C14.412,17.992 17.992,14.412 17.992,9.995 C17.992,5.579 14.412,1.998 9.995,1.998 C5.578,1.998 1.998,5.579 1.998,9.995 C1.998,14.412 5.578,17.992 9.995,17.992 ZM16.321,17.735 C14.598,19.146 12.395,19.992 9.995,19.992 C4.474,19.992 -0.001,15.516 -0.001,9.995 C-0.001,4.475 4.474,-0.001 9.995,-0.001 C15.516,-0.001 19.991,4.475 19.991,9.995 C19.991,12.396 19.145,14.598 17.735,16.322 L25.000,23.586 L23.586,25.000 L16.321,17.735 Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28rpx;
+}
+
+.search-input {
+  flex: 1;
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  padding-left: 60rpx;
+  font-size: 28rpx;
+  border: 1rpx solid #e6e6ea;
+}
+
+.search-btn {
+  font-size: 26rpx;
+  height: 60rpx;
+  line-height: 58rpx;
+  padding: 0 20rpx;
+  margin: 0;
+  margin-left: 10rpx;
+  border-radius: 10rpx;
+}
+
+navigator.search-view::before {
+  content: none;
+}
+
+navigator.search-view .search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+navigator.search-view .search-input::before {
+  content: '';
+  display: inline-block;
+  width: 42rpx;
+  height: 42rpx;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25px' height='25px'%3E%3Cpath fill-rule='evenodd' fill='%23909399' d='M9.995,17.992 C14.412,17.992 17.992,14.412 17.992,9.995 C17.992,5.579 14.412,1.998 9.995,1.998 C5.578,1.998 1.998,5.579 1.998,9.995 C1.998,14.412 5.578,17.992 9.995,17.992 ZM16.321,17.735 C14.598,19.146 12.395,19.992 9.995,19.992 C4.474,19.992 -0.001,15.516 -0.001,9.995 C-0.001,4.475 4.474,-0.001 9.995,-0.001 C15.516,-0.001 19.991,4.475 19.991,9.995 C19.991,12.396 19.145,14.598 17.735,16.322 L25.000,23.586 L23.586,25.000 L16.321,17.735 Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28rpx;
+}
+
+navigator.search-view .search-input::after {
+  content: "请输入搜索内容";
+  color: #a0a4aa;
+}

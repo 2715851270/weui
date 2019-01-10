@@ -1,0 +1,2 @@
+/* pages/navigationStyle/style5.wxss */
+@import "toolbar.wxss";

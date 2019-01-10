@@ -1,0 +1,48 @@
+<!--pages/uploader/uploader.wxml-->
+
+<view class='block-title'>多图片上传（提供图片输入）</view>
+<view class='form-block'>
+  <view class='form-group'>
+    <view class='form-upload'>
+      <view class='upload-item'>
+        <image mode='aspectFill' src='{{images}}'></image>
+      </view>
+      <view class='upload-item add' bindtap='{{uploadTap}}'></view>
+    </view>
+  </view>
+</view>
+
+<view class='block-title'>上传头像</view>
+<view class='form-block'>
+  <view class='form-group align-center'>
+    <label class='form-label'>用户头像</label>
+    <view class='form-control'>
+      <view class='form-avatar'></view>
+    </view>
+  </view>
+</view>
+
+<view class='block-title'>上传证件照片</view>
+<view class='form-block'>
+  <view class='uploadcard'>
+    <view class='upcard-item'></view>
+  </view>
+  <view class='form-help-block'>
+    <view>照片需符合如下条件：</view>
+    <view>1. 行驶证正反面</view>
+    <view>2. 信息清晰显示真实有效</view>
+  </view>
+</view>
+
+<view class='block-title'>上传证件正反面照片</view>
+<view class='form-block'>
+  <view class='uploadcard'>
+    <view class='upcard-item'></view>
+    <view class='upcard-item'></view>
+  </view>
+  <view class='form-help-block'>
+    <view>照片需符合如下条件：</view>
+    <view>1. 行驶证正反面</view>
+    <view>2. 信息清晰显示真实有效</view>
+  </view>
+</view>

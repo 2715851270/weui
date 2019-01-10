@@ -1,0 +1,61 @@
+<!--pages/ucenter/ucenter.wxml-->
+
+<view class='ucenter'>
+  <view class='user'>
+    <view class='user-avatar'></view>
+    <view class='user-name'>
+      <label>Hello World</label>
+      <text>system</text>
+    </view>
+  </view>
+</view>
+
+<view class='menu'>
+  <view class='menu-item'>
+    <icon class='ant icon-wallet-fill primary'></icon>
+    <label>menu</label>
+  </view>
+  <view class='menu-item'>
+    <icon class='ant icon-mail-fill success'></icon>
+    <label>menu</label>
+  </view>
+  <view class='menu-item'>
+    <icon class='ant icon-calendar-fill danger'></icon>
+    <label>menu</label>
+  </view>
+  <view class='menu-item'>
+    <icon class='ant icon-control-fill info'></icon>
+    <label>menu</label>
+  </view>
+</view>
+
+<view class='table-view'>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>账号与安全</navigator>
+  </view>
+</view>
+
+<view class='table-view'>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>消息通知</navigator>
+  </view>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>隐私</navigator>
+  </view>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>通用</navigator>
+  </view>
+</view>
+
+<view class='table-view'>
+  <view class='table-view-cell'>
+    <navigator url='' class='navigator-right'>
+      检查更新
+      <text class='table-view-after'>V2.1.0</text>
+    </navigator>
+  </view>
+</view>
+
+<view class='form-action'>
+  <button type='default'>退出登录</button>
+</view>

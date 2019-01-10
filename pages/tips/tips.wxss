@@ -1,0 +1,33 @@
+/* pages/tips/tips.wxss */
+.tips {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 28rpx;
+  padding: 16rpx 20rpx;
+  text-align: center;
+  background-color: #fff;
+  color: #101113;
+  z-index: 99;
+}
+
+.tips-primary {
+  background-color: #409EFF;
+  color: #fff;
+}
+.tips-success {
+  background-color: #09bb07;
+  color: #fff;
+}
+.tips-danger {
+  background-color: #e64340;
+  color: #fff;
+}
+.tips-warning {
+  background-color: #ffc107;
+  color: #101113;
+}
+.tips-info {
+  background-color: #36cfc9;
+  color: #fff;
+}

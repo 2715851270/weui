@@ -1,0 +1,65 @@
+<!--pages/tabbar/tabbar.wxml-->
+<view class='block-title'>常规Tab选项卡</view>
+<view class='tabbar'>
+  <view class='tab-item {{tabArr.curHdIndex=="0" ? "active" : ""}}' data-id="0" bindtap="actionTabTap">选项一</view>
+  <view class='tab-item {{tabArr.curHdIndex=="1" ? "active" : ""}}' data-id="1" bindtap="actionTabTap">选项二</view>
+  <view class='tab-item {{tabArr.curHdIndex=="2" ? "active" : ""}}' data-id="2" bindtap="actionTabTap">选项三</view>
+</view>
+<view class='tab-container'>
+  <view class='tab-bd-item {{tabArr.curBdIndex=="0" ? "active" : ""}}'>内容一</view>
+  <view class='tab-bd-item {{tabArr.curBdIndex=="1" ? "active" : ""}}'>内容二</view>
+  <view class='tab-bd-item {{tabArr.curBdIndex=="2" ? "active" : ""}}'>内容三</view>
+</view>
+
+
+<view class='block-title'>居中的选项卡</view>
+<view class='tabbar center'>
+  <view class='tab-item {{tabArr.curHdIndex=="0" ? "active" : ""}}' data-id="0" bindtap="actionTabTap">选项一</view>
+  <view class='tab-item {{tabArr.curHdIndex=="1" ? "active" : ""}}' data-id="1" bindtap="actionTabTap">选项二</view>
+  <view class='tab-item {{tabArr.curHdIndex=="2" ? "active" : ""}}' data-id="2" bindtap="actionTabTap">选项三</view>
+</view>
+<view class='tab-container'>
+  <view class='tab-bd-item {{tabArr.curBdIndex=="0" ? "active" : ""}}'>内容一</view>
+  <view class='tab-bd-item {{tabArr.curBdIndex=="1" ? "active" : ""}}'>内容二</view>
+  <view class='tab-bd-item {{tabArr.curBdIndex=="2" ? "active" : ""}}'>内容三</view>
+</view>
+
+
+<view class='block-title'>多选项Tab选项卡</view>
+<view class='tabbar'>
+  <scroll-view scroll-x class='tab-scroll'>
+    <view class='tab-view'>
+      <view class='tab-item active'>选项一</view>
+      <view class='tab-item'>选项二</view>
+      <view class='tab-item'>选项三</view>
+      <view class='tab-item'>选项四</view>
+      <view class='tab-item'>选项五</view>
+      <view class='tab-item'>选项六</view>
+      <view class='tab-item'>选项七</view>
+      <view class='tab-item'>选项八</view>
+      <view class='tab-item'>选项九</view>
+    </view>
+  </scroll-view>
+</view>
+
+
+<view class='block-title'>卡片式选项卡</view>
+<view class='tabcard'>
+  <view class='tab-item {{tabArr.curHdIndex=="0" ? "active" : ""}}' data-id="0" bindtap="actionTabTap">选项一</view>
+  <view class='tab-item {{tabArr.curHdIndex=="1" ? "active" : ""}}' data-id="1" bindtap="actionTabTap">选项二</view>
+  <view class='tab-item {{tabArr.curHdIndex=="2" ? "active" : ""}}' data-id="2" bindtap="actionTabTap">选项三</view>
+</view>
+
+
+<view class='block-title'>可滑动的Tab选项卡</view>
+<view class="tabbar">
+    <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">全部</view>
+    <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">提现中</view>
+    <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">已提现</view>
+</view>
+<swiper class='swiper-tab-container' current="{{currentTab}}" bindchange="swiperTab" duration="200">
+    <swiper-item><view class='swiper-tab-item'>全部</view></swiper-item>
+    <swiper-item><view class='swiper-tab-item'>提现中</view></swiper-item>
+    <swiper-item><view class='swiper-tab-item'>已提现</view></swiper-item>
+</swiper>
+

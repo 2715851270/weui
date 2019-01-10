@@ -1,0 +1,16 @@
+<!--pages/search/search.wxml-->
+<view class='block-title'>通用搜索框</view>
+<view class='search-view'>
+  <input type='text' class='search-input' confirm-type='search' placeholder='请输入搜索内容' />
+</view>
+
+<view class='block-title'>带搜索按钮的搜索框</view>
+<view class='search-view'>
+  <input type='text' class='search-input' confirm-type='search' placeholder='请输入搜索内容' />
+  <button type='primary' class='search-btn'>搜索</button>
+</view>
+
+<view class='block-title'>跳转搜索框</view>
+<navigator class='search-view'>
+  <view class='search-input'></view>
+</navigator>

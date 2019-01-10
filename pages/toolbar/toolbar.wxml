@@ -1,0 +1,10 @@
+<!--pages/toolbar/toolbar.wxml-->
+
+<view class='table-view'>
+  <view class='table-view-cell'>
+    <navigator url='style1' class='navigator-right'>顶部工具栏</navigator>
+  </view>
+  <view class='table-view-cell'>
+    <navigator url='style2' class='navigator-right'>底部工具栏</navigator>
+  </view>
+</view>

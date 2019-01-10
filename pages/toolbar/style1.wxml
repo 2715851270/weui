@@ -1,0 +1,22 @@
+<!--pages/navigationStyle/style5.wxml-->
+
+<view class='toolbar'>
+  <navigator class='tool-item pull-left'>
+    <icon class='ionm ion-md-person'></icon>
+  </navigator>
+  <view class='tabbar center'>
+    <view class='tab-item {{tabArr.curHdIndex=="0" ? "active" : ""}}' data-id="0" bindtap="actionTabTap">选项一</view>
+    <view class='tab-item {{tabArr.curHdIndex=="1" ? "active" : ""}}' data-id="1" bindtap="actionTabTap">选项二</view>
+    <view class='tab-item {{tabArr.curHdIndex=="2" ? "active" : ""}}' data-id="2" bindtap="actionTabTap">选项三</view>
+  </view>
+  <navigator class='tool-item pull-right'>
+    <icon class='ionm ion-md-apps'></icon>
+  </navigator>
+  <navigator class='tool-item pull-right'>
+    <icon class='ant icon-search'></icon>
+  </navigator>
+</view>
+
+<view class='container'>
+  container
+</view>
